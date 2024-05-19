@@ -1,10 +1,14 @@
 /* FORMULARIO */
 
+.divform{
+	display: flex; 
+	flex-direction: row;
+	margin: 2rem 0;
+}
+
 .contactForm {
 	display: flex;
 	justify-content: center;
-	align-items: start;
-	height: 100vh;
 }
 
 .form {
@@ -90,7 +94,7 @@
 	cursor: pointer;
 	font-size: 16px;
 	margin-top: 30px;
-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .submitBtn:hover {
@@ -99,16 +103,16 @@ transition: all 0.3s ease-in-out;
 }
 
 .submitBtn-reset {
-margin-left: 20px;
-padding: 5px;
-border: none;
-background-color: #1ec7e2;
-color: white;
-border-radius: 6px;
-cursor: pointer;
-font-size: 16px;
-margin-top: 30px;
-transition: all 0.3s ease-in-out;
+	margin-left: 20px;
+	padding: 5px;
+	border: none;
+	background-color: #1ec7e2;
+	color: white;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 16px;
+	margin-top: 30px;
+	transition: all 0.3s ease-in-out;
 }
 
 .submitBtn-reset:hover {
@@ -117,19 +121,19 @@ transition: all 0.3s ease-in-out;
 }
 
 .mensaje {
-position: absolute;
-top: 0px;
-left: 0px;
-height: 190%;
-width: 100%;
-border: 1px solid #DADCE0;
-border-radius: 7px;
-font-size: 16px;
-padding: 10px 20px 0px;
-outline: none;
-background: none;
-z-index: 1;
-resize: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 190%;
+	width: 100%;
+	border: 1px solid #DADCE0;
+	border-radius: 7px;
+	font-size: 16px;
+	padding: 10px 20px 0px;
+	outline: none;
+	background: none;
+	z-index: 1;
+	resize: none;
 }
 
 .mensaje:focus + .label {
@@ -152,4 +156,3 @@ resize: none;
     font-size: 14px;
     font-weight: 600;
 }
-   
