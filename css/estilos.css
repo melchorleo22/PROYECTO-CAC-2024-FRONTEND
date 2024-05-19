@@ -1,3 +1,65 @@
+.fila{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fila ,contenedorTarjeta{
+    gap: 2.5rem;
+    margin: 4rem 0;
+}
+
+.fila h2{
+    font-size: xx-large;
+}
+
+.fila p{
+    font-size: medium;
+    padding-left: 1rem;
+}
+
+.fila ul{
+    list-style-type: disc;
+    padding-left: 4rem;
+}
+
+.tarjeta{
+    border: 2px solid #04146c;
+    border-radius: 1.875rem 1.875rem 3.75rem 1.875rem;
+    height: 12.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 10px 3px #0a30f1;
+}
+
+.tarjeta ,valores{
+    width: 20rem;
+}
+
+.curso{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem 0;
+    list-style-type: disc;
+}
+
+.nosotros p{
+    margin: 1rem 0;
+}
+
+.mapa{
+    margin: 3rem 0;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,7 +67,7 @@
 }
 
 header {
-    background-color: #ffffff;
+    background-color: white;
     margin: 12px 10px;
     justify-content: center;
     align-items: center;
@@ -36,7 +98,7 @@ body {
     display: flex;
     flex-wrap: row wrap;
     justify-content: center;
-    background-color: #fff;
+    background-color: white;
     margin: 10px 20px;
     padding: 15px;
     float:right;
@@ -69,16 +131,6 @@ body {
         overflow: auto;
     }
 
-/* Estilos para la barra de progreso */
-#progressBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 5px; /* Altura de la barra de progreso */
-    background-color: #0a2ff1; /* Color azul */
-    z-index: 9999; /* Asegura que esté por encima de otros elementos */
-}
 .fotoForm{
     width: 50%;
     float: left;
@@ -86,13 +138,7 @@ body {
 }
 .fotoForm img{
     width: 100%;
-    margin: 50px;
 }
-.contactForm{
-    width: 50%;
-    float: right;
-}
-
 
 /* Estilos para las cards */
 .contenedor-cards {
@@ -171,13 +217,14 @@ body {
         margin:auto;
     }
     .flip-main{
-        min-height: 100vh;
-        background-color: #dde3f7;
-        padding: 100px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
     .flip-main .flip-card{
         flex:0 0 calc(22% - 25px);
-        margin:0 2%;
+        margin:2rem 2%;
         perspective: 1000px; /*remove this if you dont want the 3d effect*/
     }
     .flip-main .flip-card-inner{
