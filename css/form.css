@@ -1,5 +1,18 @@
 /* FORMULARIO */
 
+.mapa h2{
+	margin: 0 0 2rem 2rem;
+}
+
+.fotoForm{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.fotoForm img{
+    width: 100%;
+}
+
 .divform{
 	display: flex; 
 	flex-direction: row;
@@ -104,9 +117,9 @@
 
 .submitBtn-reset {
 	margin-left: 20px;
-	padding: 5px;
+	padding: 15px;
 	border: none;
-	background-color: #1ec7e2;
+	background-color: #8a9af1;
 	color: white;
 	border-radius: 6px;
 	cursor: pointer;
@@ -116,7 +129,7 @@
 }
 
 .submitBtn-reset:hover {
-    background-color: #037f8c;
+    background-color: #8a9af1a6;
     transform: translateY(-2px);
 }
 
@@ -155,4 +168,32 @@
     z-index: 10;
     font-size: 14px;
     font-weight: 600;
+}
+
+@media (max-width: 767.98px){
+    .fotoForm{
+        display: none;
+    }
+
+	.contactForm {
+		margin: -2rem;
+	}
+
+	.mapa h2{
+		padding-top: 1rem;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.fotoForm{
+		display: none;
+	}
+
+	.contactForm {
+		margin: -2rem;
+	}
+
+	.form{
+		width: 80%;
+	}
 }
