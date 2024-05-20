@@ -1,18 +1,3 @@
-// Función para actualizar la barra de progreso
-function updateProgressBar() {
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    var scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-    var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
-
-    var scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
-    document.getElementById("progressBar").style.width = scrolled + "%";
-}
-
-  // Evento de desplazamiento
-window.onscroll = function() {
-    updateProgressBar();
-};
-
 // Función para validar y mostrar mensaje pop-up al enviar el formulario
 function validarFormulario() {
   // Obtener los valores de los campos del formulario
