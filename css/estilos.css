@@ -246,9 +246,14 @@ body {
             flex-direction: column;
             gap: 1rem;
         }
-    
+        
+        .nav-list{
+            display: flex;
+            justify-content: center;
+        }
+
         .navegacion li {
-            padding: 0.5rem;
+            padding: 0.25rem;
         }
     
         .fila{
@@ -262,6 +267,11 @@ body {
         .raro{
             margin-left: 0rem;
         }
+
+        .nav-link:hover {
+            padding: 0px;
+        }
+
     }
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -282,9 +292,22 @@ body {
             height: 80px;
         }
 
+        .nav-list{
+            display: flex;
+            justify-content: center;
+        }
+
+        .navegacion li {
+            padding: 0.25rem;
+        }
+
         .flip-main .flip-card {
             margin-right: 1.5rem;
             margin-left: 1.5rem;
+        }
+
+        .nav-link:hover {
+            padding: 0px;
         }
     }
     @media(max-width: 767px){
